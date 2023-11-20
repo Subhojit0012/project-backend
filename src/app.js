@@ -11,9 +11,19 @@ app.use(
   })
 );
 
-app.use(express.json({ limit: "20kb" }));
-app.use(express.urlencoded({ extended: true, limit: "20kb" }));
+app.use(express.json({ limit: "16kb" }));
+app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
-app.use(express.cookieParser());
+app.use(cookieParser());
 
-export default app;
+// routes imports
+
+import userRouter from "./routes/user.routes.js";
+
+// routes declarations
+
+app.use("api/v1/users", userRouter);
+
+// http://localhost:8080/api/v1/user/register
+
+export { app };
