@@ -6,6 +6,10 @@ dotenv.config({
   path: "./env",
 });
 
+// USE ANY ONE OF THIS CODE WHICH YOU LIKE 
+
+// ####### OPTION 1. #######
+
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 3000, () => {
@@ -15,6 +19,9 @@ connectDB()
   .catch((err) => {
     console.log("MONGODB connection falied !!", err);
   });
+
+
+// ###### OPTION 2. ######
 
 /*
 import express from "express";
