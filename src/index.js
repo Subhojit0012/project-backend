@@ -3,10 +3,10 @@ import connectDB from "./db/data.js";
 import { app } from "./app.js";
 
 dotenv.config({
-  path: "./env",
+  path: "./.env",
 });
 
-// USE ANY ONE OF THIS CODE WHICH YOU LIKE 
+// USE ANY ONE OF THIS CODE WHICH YOU LIKE
 
 // ####### OPTION 1. #######
 
@@ -19,7 +19,6 @@ connectDB()
   .catch((err) => {
     console.log("MONGODB connection falied !!", err);
   });
-
 
 // ###### OPTION 2. ######
 
