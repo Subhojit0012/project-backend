@@ -1,9 +1,7 @@
 # backend with javascript
 
-facing error in the port
-
-ERROR solved in # index.js
-
-Database connected successfully ✅
-
+## Model
 [Model link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj) 👾
+
+## MongoDB
+[link](https://www.mongodb.com/docs/)
