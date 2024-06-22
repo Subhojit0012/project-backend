@@ -29,7 +29,7 @@ const videoSchema = new Schema(
       default: 0,
     },
     isPublished: {
-      type: Boolean, // cloudinary url
+      type: Boolean,
       default: true,
     },
     owner: {
