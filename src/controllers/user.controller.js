@@ -336,6 +336,7 @@ const getUserChannelProfile = asyncHandler(async (req, res) => {
     throw new ApiError(400, "username is missing");
   }
 
+  // aggragation pipeline:
   const channel = await User.aggregate([
     {
       $match: {
@@ -401,6 +402,7 @@ const getUserChannelProfile = asyncHandler(async (req, res) => {
 });
 
 const getWatchHistory = asyncHandler(async (req, res) => {
+  // aggragation pipeline:
   const user = await User.aggregate([
     {
       $match: {

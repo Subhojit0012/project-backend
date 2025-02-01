@@ -22,6 +22,6 @@ import userRouter from "./routes/user.routes.js";
 
 // routes declarations
 
-app.use("/api/v1/users", userRouter);
+app.use("/api/v2/users", userRouter);
 
 export { app };
